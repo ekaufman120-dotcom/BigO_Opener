@@ -17,9 +17,25 @@ public class BigO{
         int missingNumber = -1;
         int blankSpace = -1;
         
+        if(theNumbers.length != 10){
+            try{
+                throw new IncorrectArrayException("Array must be of length 10.");
+            } catch(IncorrectArrayException e){
+                e.getMessage();
+            }
+        }
+
         for(int i = 0; i < theNumbers.length; i++){
             if(theNumbers[i] == 0){
                 blankSpace = i;
+            }
+        }
+
+        if(blankSpace == -1){
+            try{
+                throw new IncorrectArrayException("Array must contain a zero to indicate the missing number.");
+            } catch(IncorrectArrayException e){
+                e.getMessage();
             }
         }
 
