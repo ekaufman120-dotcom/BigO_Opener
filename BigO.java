@@ -10,7 +10,7 @@
 //dearest copilot can you please stop making suggestions ok bye
 public class BigO{
     public static void main(String[] args){
-        findTheBlank(new int[]{0});
+        findTheBlank(new int[]{1,2,3,4,5,6,7,0,9,10});
     }
 
     public static void findTheBlank(int[] theNumbers) {
